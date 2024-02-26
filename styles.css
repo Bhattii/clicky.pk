@@ -10,10 +10,40 @@ body {
 header {
     background-color: white;
     width: auto;
-    height: 50px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
+
+.logo {
+    margin: auto 30px;
+}
+
+.main-menu {
+    margin-top: 9px;
+}
+
+.menu {
+    margin: auto 10px;
+    text-decoration: none;
+}
+
+.main-menu a {
+    color: black;
+    text-decoration-line: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+#red {
+    color: red;
+}
+
+.search-bar {}
