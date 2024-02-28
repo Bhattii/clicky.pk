@@ -7,43 +7,55 @@ body {
     background-color: #CCD3CA;
 }
 
-header {
+.header {
     background-color: white;
-    width: auto;
+    width: full;
     height: 70px;
     display: flex;
     align-items: center;
-
+    border: none;
 }
 
-.header {
-    display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
-}
+
 
 .logo {
     margin: auto 30px;
 }
 
-.main-menu {
-    margin-top: 9px;
+.nav-bar {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
 }
 
-.menu {
-    margin: auto 10px;
+.nav-bar a {
     text-decoration: none;
+    color: inherit;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
 }
 
-.main-menu a {
-    color: black;
-    text-decoration-line: none;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
-#red {
+#sale {
+    animation: blink 2s infinite;
     color: red;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .search-bar {}
+
+.search {}
