@@ -1,14 +1,16 @@
 :root {
-    --background: hsl(111, 12%, 89%);
+    --gray: hsl(111, 12%, 89%);
+    --dark-gray: rgb(143, 143, 143);
+    --black: black;
 }
 
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: var(--background);
+    background-color: var(--gray);
 }
 
 .header {
@@ -22,22 +24,29 @@ body {
 }
 
 .logo {
-    margin: auto 30px;
+    margin: auto 15px auto 25px;
+    font-size: 30px;
 }
 
 .nav-bar {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     list-style-type: none;
+    height: auto;
 }
 
 .nav-bar a {
     text-decoration: none;
     color: inherit;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 10px;
-    font-size: 15px;
+    padding: 17px 14px;
+    font-size: 14px;
     font-weight: bold;
+}
+
+.nav-bar a:hover {
+    background-color: var(--gray);
 }
 
 @keyframes highlight {
@@ -58,7 +67,7 @@ body {
     animation: highlight 2s infinite;
     color: red;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .search-bar {
@@ -73,7 +82,7 @@ input[type="search"] {
     width: 250px;
     border: none;
     padding: 10px;
-    background-color: var(--background);
+    background-color: var(--gray);
 }
 
 .search-icon {
@@ -89,10 +98,59 @@ input[type="search"] {
     text-align: center;
     justify-content: space-between;
     list-style-type: none;
-    margin: 10px;
+    margin: 15px;
 }
 
 .icons li {
+    margin: 15px;
+    font-size: 22px;
+}
+
+.image {
+    background-color: var(--gray);
+    margin-bottom: 0;
+}
+
+.image img {
+    width: 100%;
+    height: 420px;
+    margin-top: 15px;
+    border: none;
+    margin-bottom: 0;
+
+
+}
+
+main {
+    background-color: var(--black);
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+}
+
+.products {
+    background-color: var(--black);
+    height: 400px;
+}
+
+.products ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.products ul li {
+    display: flex;
+    text-align: center;
+    list-style-type: none;
     margin: 20px;
-    font-size: 20px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.products ul li a {
+    text-decoration: none;
+    color: white;
 }
