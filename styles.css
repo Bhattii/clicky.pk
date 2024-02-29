@@ -2,6 +2,7 @@
     --gray: hsl(111, 12%, 89%);
     --dark-gray: rgb(143, 143, 143);
     --black: black;
+    --white: white;
 }
 
 * {
@@ -16,7 +17,7 @@ body {
 }
 
 .header {
-    background-color: white;
+    background-color: var(--white);
     width: 100%;
     height: 70px;
     display: flex;
@@ -147,8 +148,7 @@ main {
     text-align: center;
     list-style-type: none;
     margin: 30px;
-    padding: 0;
-    border: 1px solid white;
+    border: 1px solid var(--white);
     border-radius: 20px;
 }
 
@@ -157,7 +157,7 @@ main {
     align-items: center;
     margin: 2px;
     text-decoration: none;
-    color: white;
+    color: var(--white);
 }
 
 .products ul li a img {
@@ -170,4 +170,8 @@ main {
 
 .products ul li a span {
     margin: 4px 10px;
+}
+
+.women {
+    color: white;
 }
