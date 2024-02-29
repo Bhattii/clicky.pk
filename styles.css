@@ -192,6 +192,20 @@ legend {
     text-align: center;
 }
 
-.for-women {
-    margin: 20px 100px;
+.women-product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5px;
+    margin: 2%;
+
+}
+
+.women-product {
+    padding: 2px;
+    text-align: center;
+}
+
+.women-product img {
+    max-width: 90%;
+    max-height: 90%;
 }
